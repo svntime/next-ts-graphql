@@ -1,4 +1,8 @@
-export interface IPost {
-  id: string;
-  title: string;
+export interface IPosts {
+  posts: {
+    data: {
+      id: string;
+      title: string;
+    }[];
+  };
 }

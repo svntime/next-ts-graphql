@@ -1,7 +1,7 @@
-import { IPost } from 'api/posts/types';
+import { IPosts } from 'api/posts/types';
 import { controllers, graphQL } from 'api';
 
-export const getPosts = graphQL<IPost[]>(
+export const getPosts = graphQL<IPosts>(
   controllers.posts,
   `query {
     posts {
